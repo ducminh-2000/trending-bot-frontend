@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-md-6 col-xs-6">
+      <h3> up 5%</h3>
+      <table id="up">
+        <thead>
+                    <tr>
+              <th>Datetime</th>
+              <th>Symbol</th>
+              <th>Current price</th>
+              <th>Price change percent</th>
+          </tr></thead>
+          <tbody [(ngModel)]="listUp" *ngFor="let coin of listUp">
+            <td id="{{coin.name}}-up"></td>
+          </tbody>
+      </table>
+  </div>
+  <div class="col-md-6 col-xs-6">
+      <h3> down -10%</h3>
+      <table id="down">
+        <thead>
+          <tr>
+              <th>Datetime</th>
+              <th>Symbol</th>
+              <th>Current price</th>
+              <th>Price change percent</th>
+          </tr></thead>
+          <tbody *ngFor="let coin of listCoin">
+            <td id="{{coin.name}}-up"></td>
+          </tbody>
+      </table>
+  </div>
+</div>

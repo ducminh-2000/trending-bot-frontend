@@ -1,0 +1,26 @@
+<div class="animated fadeIn">
+  <div class="row" style="display: block;">
+    <!-- <div class="col-sm-6"> -->
+      <div class="card">
+        <div class="card-header">
+          <strong>Create</strong>
+        </div>
+        <div class="card-body">
+          <form (ngSubmit)="onSubmit()" class="form-horizontal">
+            <div class="form-group row">
+              <label class="col-sm-5 col-form-label" for="input-normal">Symbol</label>
+              <div class="col-sm-6">
+                <input type="text" id="input-normal" name="tenCongTy" class="form-control" [(ngModel)]="congTy.name">
+              </div>
+            </div>
+            <div class="card-footer">
+              <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
+              <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+              <button class="btn btn-sm btn-success" (click)="back()">Hủy</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    <!-- </div> -->
+  </div>
+</div>
